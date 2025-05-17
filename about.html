@@ -8,56 +8,77 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-    }
-    header {
-      background: #1a1a1a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
+      display: flex;
+      background: #ffffff;
+      color: #000000;
       font-weight: bold;
     }
-    section {
+
+    nav {
+      background: #c8a2c8; /* Lilac */
+      width: 200px;
+      min-height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    nav a {
+      display: block;
+      color: #000000;
+      text-decoration: none;
+      margin: 20px 0;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      flex: 1;
       padding: 40px;
+    }
+
+    header, footer {
+      text-align: center;
+      background: #c8a2c8;
+      padding: 20px;
+      color: #000;
+    }
+
+    section {
       max-width: 800px;
       margin: auto;
-      text-align: center;
-    }
-    footer {
-      background: #1a1a1a;
-      color: white;
-      padding: 20px;
-      text-align: center;
+      background-color: #f8f0fc;
+      padding: 30px;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>PFJ Consultancy</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <nav>
+    <h2>PFJ</h2>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <section>
-    <h2>About Us</h2>
-    <p>PFJ Consultancy is dedicated to providing professional language services and business support. We specialize in translation, interpretation, language classes, consultancy, and accountancy — offering reliable solutions tailored to your needs.</p>
-    <p>With a strong background in multilingual communication and financial management, our mission is to empower individuals and businesses to succeed in a global environment.</p>
-  </section>
+  <div class="content">
+    <header>
+      <h1>About Us</h1>
+    </header>
 
-  <footer>
-    <p>&copy; 2025 PFJ Consultancy. All rights reserved.</p>
-  </footer>
+    <section>
+      <p>PFJ Consultancy is dedicated to providing professional language services and business support. We specialize in translation, interpretation, language classes, consultancy, and accountancy — offering reliable solutions tailored to your needs.</p>
+      <p>With a strong background in multilingual communication and financial management, our mission is to empower individuals and businesses to succeed in a global environment.</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 PFJ Consultancy. All rights reserved.</p>
+    </footer>
+  </div>
 
 </body>
 </html>
